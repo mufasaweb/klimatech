@@ -1,0 +1,151 @@
+/* Klimatech Técnico - Estilos personalizados Mobile First */
+
+/* General */
+body, html {
+    background: #f3f6fb;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header App */
+.app-header {
+    background: #00b4d8;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.app-header img {
+    vertical-align: bottom;
+}
+
+/* Main Content */
+main {
+    margin-bottom: 65px; /* espacio para tab-bar */
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* Tarjetas / Alerts */
+.alert-info {
+    background: #e0f7fa;
+    color: #007a99;
+    border: none;
+}
+
+/* Tab bar inferior estilo app */
+.tab-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 1050;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.25rem 0;
+    box-shadow: 0 -2px 10px 0 #0001;
+}
+
+.tab-bar a {
+    flex: 1 1 0;
+    text-align: center;
+    color: #888;
+    padding: 0.5rem 0 0.25rem 0;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tab-bar a.active, .tab-bar a:active, .tab-bar a:focus {
+    color: #00b4d8;
+    font-weight: 600;
+    background: #e0f7fa;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-bar .icon {
+    font-size: 1.4em;
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+/* Botones */
+.btn-primary {
+    background: #00b4d8;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: #0096c7;
+}
+
+.btn-danger {
+    background: #ef233c;
+    border: none;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background: #d90429;
+}
+
+/* Formulario */
+.form-label {
+    font-weight: 500;
+    color: #005f73;
+}
+
+.form-control:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 0 0.2rem #00b4d833;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .app-header { font-size: 1.7rem; }
+    .tab-bar { width: 360px; margin: 0 auto; left: 50%; transform: translateX(-50%); }
+    main { width: 360px; margin: 0 auto; }
+}
+
+/* --- ESTILO CUSTOM PARA LAS CARDS DE RUTA --- */
+.ruta-card {
+    background: linear-gradient(120deg, #E3F0FF 60%, #f7fbff 100%);
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px 0 rgba(44, 83, 131, .08);
+    transition: transform 0.13s, box-shadow 0.13s;
+    cursor: pointer;
+    overflow: hidden;
+    /* padding removido */
+}
+.ruta-card:hover {
+    transform: scale(1.025) translateY(-2px);
+    box-shadow: 0 8px 24px 0 rgba(44, 83, 131, .16);
+    background: linear-gradient(120deg, #C4E0FF 65%, #e9f3fd 100%);
+    text-decoration: none;
+}
+.ruta-card .icono-fecha {
+    background: #1874cc;
+    color: #fff;
+    border-radius: 25%;
+    /* padding: 16px 19px; */ /* puedes ajustar si deseas menos espacio */
+    font-size: 2.1rem;
+    margin-right: 22px;
+    box-shadow: 0 2px 10px #1874cc33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+}
+.ruta-card strong {
+    font-size: 1.25rem;
+    color: #17406a;
+    letter-spacing: .5px;
+}
+
+/* Puedes agregar aquí más estilos generales de la app si lo deseas */

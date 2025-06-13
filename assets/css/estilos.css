@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    overflow: hidden; /* No permite hacer scroll */
+}
+
+body {
+    background: linear-gradient(135deg, #00b4d8, #48cae4 80%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 85vw;
+    max-width: 400px;
+    min-width: 250px;
+    max-height: 98vh;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    overflow-y: auto;
+}
+
+.login-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 1.2rem 0.8rem;
+    }
+    .login-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
